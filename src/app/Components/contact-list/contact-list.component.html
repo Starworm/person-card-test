@@ -1,0 +1,13 @@
+<div class="container">
+  <app-contact-item
+    *ngFor="let contact of contacts; let i=index"
+    [contactElement]="contact"
+    [index]="i"
+  ></app-contact-item>
+  <div class="plus">
+    <a [routerLink]="['contact/new']">
+      <img src="../../../assets/img/addIcon.png"
+           style="cursor: pointer;">
+    </a>
+  </div>
+</div>

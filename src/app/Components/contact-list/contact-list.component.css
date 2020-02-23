@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plus {
+  display: flex;
+  padding: 57px 154px 47px 154px;
+  margin: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 62px;
+}

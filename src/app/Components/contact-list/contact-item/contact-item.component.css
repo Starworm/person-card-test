@@ -1,0 +1,50 @@
+.mat-card {
+  display: flex;
+  padding: 12px;
+  margin: 8px;
+  width: 312px;
+}
+
+.content {
+
+}
+
+.sprite {
+  background: url("../../../../assets/img/sprite-icone.png");
+}
+
+.picts {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.pen {
+  background-position: 0 -71px;
+}
+
+.trash {
+  background-position: -450px 1px;
+}
+
+.point {
+  background-position: -26px -66px;
+}
+
+.col-1 {
+  width: 52%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: 54%;
+}
+
+.col-3 {
+  width: 17%;
+  display: flex;
+  align-items: flex-end;
+}

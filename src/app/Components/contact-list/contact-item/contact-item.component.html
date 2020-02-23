@@ -1,0 +1,32 @@
+<div class="mat-card">
+
+  <div class="col-1">
+    <img
+      [src]="contactElement.photoPath"
+      alt="{{contactElement.name}}"
+      style="max-height: 70%; border-radius: 50%">
+    <strong>{{contactElement.position}}</strong>
+  </div>
+
+  <div class="col-2">
+    <div class="content">
+      <h5>{{contactElement.name}}</h5>
+      <div>
+        <span class="sprite picts point"></span>
+        <span>Lat: {{contactElement.coordLat}}, Long: {{contactElement.coordLon}}</span>
+      </div>
+      <div><strong>{{contactElement.company}}</strong></div>
+      <div>{{contactElement.street}}, {{contactElement.house}}, {{contactElement.city}}</div>
+      <div>{{contactElement.phone}}</div>
+    </div>
+  </div>
+
+  <div class="col-3">
+    <span class="sprite picts pen"
+          [routerLink]="['contact',index]"
+          style="cursor: pointer"></span>
+    <span class="sprite picts trash"
+          style="cursor: pointer"
+          (click)="delete()"></span>
+  </div>
+</div>
